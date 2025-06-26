@@ -2,15 +2,24 @@
 
 A new Flutter project.
 
-## Getting Started
+## ¿Qué incluye?
+- Selección de hijo (con dropdown)
+- Filtro por categorías (ChoiceChips)
+- Tarjetas visuales con eventos por niño/a
+- Responsive: pensado para móvil y adaptable a escritorio
+- Datos mockeados (mock_data.dart)
+- Carga de imágenes desde RandomUser API
 
-This project is a starting point for a Flutter application.
+## Paquetes utilizados
+- `flutter_riverpod` – gestión de estado con Riverpod
+- `riverpod_annotation` y `riverpod_generator` – anotaciones y generación automática de código
+- `go_router` – navegación declarativa
+- `json_annotation` y `json_serializable` – serialización de modelos
+- `build_runner` – generación de código
+- `flutter_test` – pruebas automatizadas
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Instalación
+```bash
+flutter pub get
+flutter pub run build_runner build --delete-conflicting-outputs  / Recomendado
+flutter run
